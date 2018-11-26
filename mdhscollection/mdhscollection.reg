@@ -1,0 +1,17 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则调用
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\mdhscollection.Application = mdhscollection Application
+
+
+HKEY_CLASSES_ROOT\mdhscollection.Application\CLSID = {C60DBDED-60A8-4453-808E-D4D6B4DB9C5F}
+
+HKEY_CLASSES_ROOT\CLSID\{C60DBDED-60A8-4453-808E-D4D6B4DB9C5F} = mdhscollection Application
+HKEY_CLASSES_ROOT\CLSID\{C60DBDED-60A8-4453-808E-D4D6B4DB9C5F}\ProgId = mdhscollection.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{C60DBDED-60A8-4453-808E-D4D6B4DB9C5F}\LocalServer32 = mdhscollection.EXE

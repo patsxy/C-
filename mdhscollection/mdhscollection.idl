@@ -1,0 +1,29 @@
+// mdhscollection.idl : mdhscollection.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(mdhscollection.tlb)。
+
+[ uuid(238F25A6-23F2-4B2A-88D8-1D1E55C613DB), version(1.0) ]
+library mdhscollection
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CmdhscollectionDoc 的主调度接口
+	
+	[ uuid(1D56D1A4-23ED-44E7-886A-E79DE4694C3A) ]
+	dispinterface Imdhscollection
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CmdhscollectionDoc 的类信息
+	
+	[ uuid(C60DBDED-60A8-4453-808E-D4D6B4DB9C5F) ]
+	coclass mdhscollection
+	{
+		[default] dispinterface Imdhscollection;
+	};
+};
